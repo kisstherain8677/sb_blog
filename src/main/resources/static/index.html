@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>欢迎来到我的博客!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- The main CSS file -->
+        <link href="css/main.css" rel="stylesheet">
+
+        <!-- CSS file for your custom modifications -->
+        <link href="css/custom.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+  
+    
+    <!-- Scrollspy set in the body -->
+    <body id="home" data-spy="scroll" data-target=".main-nav" data-offset="73">
+
+    <!--///////////////////////////////////////// PARALLAX BACKGROUND ////////////////////////////////////////-->
+
+    <!-- image is set in the CSS as a background image -->
+    <div id="parallax"></div>
+
+    <!--///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
+
+
+    
+    <!--/////////////////////////////////////// NAVIGATION BAR ////////////////////////////////////////-->
+
+    <section id="header">
+
+        <nav class="navbar navbar-fixed-top" role="navigation">
+
+            <div class="navbar-inner">
+                <div class="container">
+
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#navigation"></button>
+
+                    <!-- Logo goes here - replace the image with yours -->
+                    <a href="index.html" class="navbar-brand"><img src="images/logo.png" class="logo-img img-responsive" alt="Booom! Logo" title="Booom! Logo"></a>
+
+
+                    <div class="collapse navbar-collapse main-nav" id="navigation">
+
+
+                        <ul class="nav pull-right">
+
+                            <!-- Menu items go here -->
+                            <li class="active hidden"><a href="#home">Home</a></li>
+<!--                            <li><a href="#features">Features</a></li>-->
+                            <li><a href="#gallery">Gallery</a></li>
+<!--                            <li><a href="#pricing">Pricing</a></li>-->
+<!--                            <li><a href="#testimonials">Testimonials</a></li>-->
+                            <li><a href="blog-small-images.html">Blog &rarr;</a></li>
+<!--                            <li><a href="#faq">FAQ/Contact</a></li>-->
+<!--        <li><a href="http://www.freemuban.com">More theme</a></li>-->
+                            <!-- If you want sub-menu items, do them like this
+                            <li>
+                                <ul>
+                                  <li><a href="#">Item 1</a></li>
+                                  <li><a href="#">Item 2</a></li>
+                                </ul>
+                            </li> 
+                            You just need to delete these comment lines -->
+                        </ul>
+
+                    </div><!-- /nav-collapse -->
+                </div><!-- /container -->
+            </div><!-- /navbar-inner -->
+        </nav>
+
+    </section>
+
+    <!--//////////////////////////////////////// end NAVIGATION BAR ////////////////////////////////////////-->
+
+    
+
+    <!--/////////////////////////////////////// HERO SECTION ////////////////////////////////////////-->
+
+    <section id="hero">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 intro">
+                    <img src="images/logo.png" alt="Booom! Logo" title="Booom! Logo">
+                    <p class="lead">欢迎访问我的个人博客！</p>
+                    <a href="#newsletter" class="btn btn-hg btn-primary">登录</a>
+                    <a href="#gallery" class="btn btn-hg btn-inverse inline">预览图片</a>
+                </div>
+
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+    </section>
+
+    <!--///////////////////////////////////////////////// end HERO SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// FEATURES SECTION ////////////////////////////////////////-->
+
+<!--    <section id="features">-->
+
+<!--        <div class="container">-->
+
+<!--            <header>-->
+<!--                <h1>Dynamite Features</h1>-->
+<!--                <p class="lead">Wow your visitors with beautiful, resizable SVG cons.</p>-->
+<!--            </header>-->
+
+<!--            <div class="row">-->
+<!--                -->
+<!--                &lt;!&ndash; Feature Item 1 &ndash;&gt;-->
+<!--                <div class="col-md-4 text-center">-->
+<!--                    <div class="feature-icon">-->
+<!--                        <img src="images/icons/key.svg" alt="" title="" />-->
+<!--                    </div>-->
+<!--                    <h4>Ready to Start</h4>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash; Feature Item 2 &ndash;&gt;-->
+<!--                <div class="col-md-4 text-center">-->
+<!--                    <div class="feature-icon">-->
+<!--                        <img src="images/icons/magic.svg" alt="" title="" />-->
+<!--                    </div>-->
+<!--                    <h4>Dressed to Impress</h4>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash; Feature Item 3 &ndash;&gt;-->
+<!--                <div class="col-md-4 text-center">-->
+<!--                    <div class="feature-icon">-->
+<!--                        <img src="images/icons/rocket.svg" alt="" title="" />-->
+<!--                    </div>-->
+<!--                    <h4>Shoot for the Stars</h4>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+
+<!--            </div>&lt;!&ndash; /row &ndash;&gt;-->
+<!--        </div>&lt;!&ndash; /container &ndash;&gt;-->
+
+<!--    </section>-->
+
+    <!--/////////////////////////////////////// end FEATURES SECTION ////////////////////////////////////////-->
+
+
+    <!--//////////////////////////////////////// NEWSLETTER SECTION ////////////////////////////////////////-->
+
+    <section id="newsletter">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <p class="lead">请输入账号密码！</p>
+                </div>
+                
+                <div class="col-md-6">
+
+                    <!--////////// Newsletter Form //////////-->
+                    <form id="newsletter-signup">
+
+                        <div class="input-group">
+                            <input type="text" name="username" id="username" class="form-control input-hg">
+                          <input type="password" name="password" id="password" class="form-control input-hg">
+                          <span class="input-group-btn">
+                            <button class="btn btn-inverse btn-hg" type="submit" name="submit">Sign Up</button>
+                          </span>
+                        </div><!-- /input-group -->
+                    </form>
+                    <!--////////// end of Newsletter Form ///////////-->
+
+                     <div id="error-info"></div><!-- Error notification for newsletter signup form -->
+
+                </div>
+
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+    </section>
+    
+    <!--//////////////////////////////////////// end NEWSLETTER SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// GALLERY SECTION ////////////////////////////////////////-->
+
+    <section id="gallery">
+
+        <div class="container">
+
+             <header>
+                <h1>我的照片</h1>
+                <p class="lead">Because one image will always be better than a thousand words.</p>
+            </header>
+
+            <!--////////// Sortable Gallery Filters //////////-->
+            <div id="filters" class="gallery-filter">
+                <select>
+                    <option value="*">All</option>
+                    <option value=".kittens">Kittens</option>
+                    <option value=".food-drinks">Food & Drinks</option>
+                    <option value=".urban">Urban</option>
+                    <option value=".sports">Sports</option>
+                </select>    
+            </div>
+            <!--////////// end of Sortable Gallery Filters //////////-->
+
+            <div id="gallery-items">
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all kittens">
+                    <figure>  
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all kittens">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" class="img-responsive"/></a>
+                        
+                        <!--/// link to a details portfolio page ///-->
+                        <div class="item-hover">
+                            <a href="portfolio-single.html">View Details</a> 
+                        </div>   
+
+                    </figure>    
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all kittens food-drinks">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all urban">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+
+                        <!--/// link to a details portfolio page ///-->
+                        <div class="item-hover">
+                            <a href="portfolio-single.html">View Details</a> 
+                        </div>   
+
+                    </figure>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all sports">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all food-drinks">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all sports food-drinks kittens">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+                    </figure>        
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all sports">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+
+                        <!--/// link to a details portfolio page ///-->
+                        <div class="item-hover">
+                            <a href="portfolio-single.html">View Details</a> 
+                        </div>   
+
+                    </figure>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all urban">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all urban food-drinks">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all kittens">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all sports urban">
+                    <figure>
+                        <a href="http://www.placehold.it/640x480" class="zoom"><img src="http://www.placehold.it/640x480" alt="gallery-image" title="gallery-image" class="img-responsive" /></a>
+                    </figure>
+                </div>
+
+            </div>
+
+        </div><!-- /container -->
+
+    </section>
+
+    <!--/////////////////////////////////////// end GALLERY SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// INFO SECTION ////////////////////////////////////////-->
+
+<!--    <section id="info">-->
+
+<!--        &lt;!&ndash;/////////// Info section alternates with white and gray backgrounds. Let's start with a white! //////////&ndash;&gt;-->
+<!--        <div class="info-section-white">-->
+
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+
+<!--                    <div class="col-md-6 pull-right gallery-popup">-->
+<!--                        <a href="http://www.placehold.it/640x480"><img src="http://www.placehold.it/640x480" alt="placeholder image" title="placeholder image" class="img-responsive"></a>-->
+<!--                    </div> -->
+
+<!--                    <div class="col-md-6 pull-left">-->
+<!--                        <h3>Single Photo Example</h3>-->
+
+<!--                        <p class="lead">Here is an example with one single photo displayed on the right.</p>-->
+
+<!--                        <p>Here is some dummy text. You can also use <span class="tooltip-trigger" data-toggle="tooltip" title="Hey, i'm a top tooltip!">tooltips</span>. That one showed on top, but you can have it on the <span class="tooltip-trigger" data-toggle="tooltip" data-placement="bottom" title="Bottom is better, guys!">bottom too</span>! How about <span class="tooltip-trigger" data-toggle="tooltip" data-placement="left" title="Left is the way to go.">left</span> or <span class="tooltip-trigger" data-toggle="tooltip" data-placement="right" title="Shut up, i'm right!">right</span>?</p>-->
+
+<!--                        <p>If you need to display more information, how about a <span class="popover-trigger" data-toggle="popover" data-placement="top" title="Hey, i'm a popover." data-content="I make those little tooltips look ridiculous!">popover</span>?</p>-->
+<!--                        -->
+<!--                        <a href="#slideshow" class="btn btn-primary btn-hg">Tell Me More!</a>-->
+<!--                        <a href="http://www.themeforest.net/user/simonswiss?ref=simonswiss" class="btn btn-danger btn-hg inline">Buy This Template</a>-->
+<!--                    </div> -->
+
+<!--                </div>&lt;!&ndash; /row &ndash;&gt;-->
+<!--            </div>&lt;!&ndash; /container &ndash;&gt;-->
+
+<!--        </div>&lt;!&ndash; /info-section-white &ndash;&gt;-->
+<!--        <div class="copyrights">Collect from <a href="http://www.freemuban.com/" >免费模板</a></div>-->
+<!--        &lt;!&ndash;/////////// And here's the gray background section! //////////&ndash;&gt;-->
+<!--        <div class="info-section-gray" id="slideshow">-->
+<!--            -->
+<!--            <div class="container">-->
+<!--                <div class="row">   -->
+
+<!--                    <div class="col-md-6">-->
+
+<!--                        &lt;!&ndash;////////// CAROUSEL SLIDER //////////&ndash;&gt;-->
+
+<!--                        &lt;!&ndash; declaring the carousel slides &ndash;&gt;-->
+<!--                        <div id="myCarousel" class="carousel slide">-->
+<!--                            <ol class="carousel-indicators">-->
+<!--                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+<!--                                <li data-target="#myCarousel" data-slide-to="1"></li>-->
+<!--                                <li data-target="#myCarousel" data-slide-to="2"></li>-->
+<!--                            </ol>-->
+
+<!--                            &lt;!&ndash; The carousel items themselves &ndash;&gt;-->
+<!--                            <div class="carousel-inner">-->
+<!--                            -->
+<!--                                &lt;!&ndash;////////// Carousel Item 1 //////////&ndash;&gt;-->
+<!--                                <div class="active item gallery-popup">-->
+<!--                                    <a href="http://www.placehold.it/640x480"><img src="http://www.placehold.it/640x480" alt="placeholder image" title="placeholder image" class="img-responsive"></a>-->
+<!--                                </div>-->
+<!--                                <div class="item gallery-popup">-->
+<!--                                    <a href="http://www.placehold.it/640x480"><img src="http://www.placehold.it/640x480" alt="placeholder image" title="placeholder image" class="img-responsive"></a>-->
+<!--                                    -->
+<!--                                    &lt;!&ndash; Here's how you add a caption &ndash;&gt;-->
+<!--                                    <div class="carousel-caption">-->
+<!--                                        <h4>You can add captions</h4>-->
+<!--                                        <p>Kudos to <a href="#" target="_blank">Author Link</a> for the wonderful illustrations!</p>-->
+<!--                                    </div>&lt;!&ndash; /caption &ndash;&gt;-->
+
+<!--                                </div>-->
+<!--                                &lt;!&ndash;////////// end of Carousel Item 1 //////////&ndash;&gt;-->
+
+<!--                                &lt;!&ndash;////////// Carousel Item 2 //////////&ndash;&gt;-->
+<!--                                <div class="item gallery-popup">-->
+<!--                                    <a href="http://www.placehold.it/640x480"><img src="http://www.placehold.it/640x480" alt="placeholder image" title="placeholder image" class="img-responsive"></a>-->
+<!--                                </div>-->
+<!--                                &lt;!&ndash;////////// end of Carousel Item 2 //////////&ndash;&gt;-->
+<!--                          -->
+<!--                            </div>-->
+
+<!--                          &lt;!&ndash; Carousel navigation arrows &ndash;&gt;-->
+<!--                          <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>-->
+<!--                          <a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                    &lt;!&ndash;////////// end of CAROUSEL SLIDER //////////&ndash;&gt;-->
+
+<!--                    <div class="col-md-6">-->
+<!--                        <h3>Slideshow Example</h3>-->
+<!--                        <p class="lead">Display multiple images with the beautiful FlexSlider plugin.</p>-->
+<!--                        <p class="modal-trigger">By the way, if the popover was still too small to show what you want, you can go with a full-blown <a data-toggle="modal" href="#myModal">modal window</a>!</p>-->
+
+<!--                        &lt;!&ndash;////////// MODAL WINDOW EXAMPLE //////////&ndash;&gt;-->
+<!--                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">-->
+<!--                          <div class="modal-dialog">-->
+<!--                              <div class="modal-content">-->
+<!--                                <div class="modal-header">-->
+<!--                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+<!--                                  <h4 class="modal-title">I am a modal window, and no one can beat me!</h4>-->
+<!--                                </div>-->
+<!--                                <div class="modal-body">-->
+
+<!--                                &lt;!&ndash; Columns within the modal window &ndash;&gt;-->
+<!--                                <div class="row">-->
+<!--                                    <div class="col-md-3">-->
+<!--                                        <img src="images/icons/dynamite.svg" alt="" title="" />-->
+<!--                                    </div>-->
+<!--                                    -->
+<!--                                    <div class="col-md-9">-->
+<!--                                        <p class="lead">Booom! Now we're talking. Imagine all the things you could say in a big modal window like this!</p>       -->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                 -->
+<!--                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, omnis, sunt illum et minima facilis rerum eaque ullam quasi aperiam soluta beatae vero atque pariatur ab ad temporibus accusamus necessitatibus.</p>-->
+<!--                                </div>-->
+<!--                                <div class="modal-footer">-->
+<!--                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Hell Yeah!</button>-->
+<!--                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close Window</button>-->
+<!--                                </div>-->
+<!--                              </div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
+<!--                            </div>&lt;!&ndash; /.modal-dialog &ndash;&gt; -->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;////////// MODAL WINDOW EXAMPLE //////////&ndash;&gt;-->
+
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, vero voluptas delectus explicabo maxime ad qui incidunt! Saepe, dolor, consequatur, distinctio incidunt unde fuga expedita ducimus maiores tempora quis vitae?</p>-->
+<!--                    </div> -->
+<!--                                   -->
+<!--                </div>&lt;!&ndash; /row &ndash;&gt;-->
+<!--            </div>&lt;!&ndash; /container &ndash;&gt;-->
+
+<!--        </div>&lt;!&ndash; /info-section-gray &ndash;&gt;-->
+
+<!--        <div class="info-section-white">-->
+
+<!--            <div class="container">-->
+<!--                <div class="row"> -->
+
+<!--                    <div class="col-md-6 pull-right gallery-popup fitvids">-->
+<!--                        <iframe src="http://player.vimeo.com/video/4240369?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" allowFullScreen></iframe>-->
+<!--                    </div>-->
+
+<!--                    <div class="col-md-6 pull-left">-->
+<!--                        <h3>Video Example</h3>-->
+<!--                        <p class="lead">You can also show videos in this section!</p>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, vero voluptas delectus explicabo maxime ad qui incidunt! Saepe, dolor, consequatur, distinctio incidunt unde fuga expedita ducimus maiores tempora quis vitae?</p>-->
+<!--                    </div> -->
+
+<!--                </div>&lt;!&ndash; /row &ndash;&gt;-->
+<!--            </div>&lt;!&ndash; /container &ndash;&gt;-->
+
+<!--        </div>&lt;!&ndash; /info-section-white &ndash;&gt;-->
+<!--        -->
+<!--    </section>-->
+
+    <!--/////////////////////////////////////// end INFO SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// PRICING SECTION ////////////////////////////////////////-->
+<!--    <section id="pricing">-->
+
+<!--        <div class="container">-->
+
+<!--            <header>-->
+<!--                <h1>Prices that go Booom!</h1>-->
+<!--                <p class="lead">Select from our ranges of prices - you won't be disappointed!</p>-->
+<!--            </header>-->
+
+<!--            <div class="row">  -->
+
+<!--                <div class="col-md-4">-->
+<!--                    <div class="pricing-box">-->
+<!--                        <div class="pricing-heading">-->
+<!--                            Little Bang-->
+<!--                        </div>&lt;!&ndash; end pricing-heading &ndash;&gt;-->
+<!--                        <div class="pricing-price">-->
+<!--                            $69.90-->
+<!--                        </div>&lt;!&ndash; end pricing-price &ndash;&gt;-->
+<!--                        <div class="pricing-description">-->
+<!--                            small fish package-->
+<!--                        </div>&lt;!&ndash; end pricing-description &ndash;&gt;-->
+<!--                        <ul class="pricing-list">-->
+<!--                            <li>Item 1</li>-->
+<!--                            <li>Item 2</li>-->
+<!--                            <li>How about one more?</li>-->
+<!--                            <li>You can add</li>-->
+<!--                            <li>unlimited lines</li>-->
+<!--                        </ul>&lt;!&ndash; end pricing-list &ndash;&gt;-->
+<!--                        <div class="pricing-cta">-->
+<!--                            <a class="btn btn-large btn-pricing">Buy Now</a>-->
+<!--                        </div>&lt;!&ndash; end pricing-cta &ndash;&gt;-->
+<!--                    </div>&lt;!&ndash; end pricing-box &ndash;&gt;-->
+<!--                </div>&lt;!&ndash; end col-md-4 &ndash;&gt;-->
+
+<!--                <div class="col-md-4">-->
+<!--                    <div class="pricing-box popular">-->
+<!--                        <div class="pricing-heading">-->
+<!--                            Solid Bang-->
+<!--                        </div>&lt;!&ndash; end pricing-heading &ndash;&gt;-->
+<!--                        <div class="pricing-price">-->
+<!--                            $99.90-->
+<!--                        </div>&lt;!&ndash; end pricing-price &ndash;&gt;-->
+<!--                        <div class="pricing-description">-->
+<!--                            make an impact-->
+<!--                        </div>&lt;!&ndash; end pricing-description &ndash;&gt;-->
+<!--                        <ul class="pricing-list">-->
+<!--                            <li>Item 1</li>-->
+<!--                            <li>Item 2</li>-->
+<!--                            <li>How about one more?</li>-->
+<!--                            <li>You can add</li>-->
+<!--                            <li>unlimited lines</li>-->
+<!--                        </ul>&lt;!&ndash; end pricing-list &ndash;&gt;-->
+<!--                        <div class="pricing-cta">-->
+<!--                            <a class="btn btn-large btn-pricing-popular">Buy Now</a>-->
+<!--                        </div>&lt;!&ndash; end pricing-cta &ndash;&gt;-->
+<!--                    </div>&lt;!&ndash; end pricing-box &ndash;&gt;-->
+<!--                </div>&lt;!&ndash; end col-md-4 &ndash;&gt;-->
+
+<!--                <div class="col-md-4">-->
+<!--                    <div class="pricing-box">-->
+<!--                        <div class="pricing-heading">-->
+<!--                            Maxi Bang-->
+<!--                        </div>&lt;!&ndash; end pricing-heading &ndash;&gt;-->
+<!--                        <div class="pricing-price">-->
+<!--                            $139.90-->
+<!--                        </div>&lt;!&ndash; end pricing-price &ndash;&gt;-->
+<!--                        <div class="pricing-description">-->
+<!--                            blast your audience!-->
+<!--                        </div>&lt;!&ndash; end pricing-description &ndash;&gt;-->
+<!--                        <ul class="pricing-list">-->
+<!--                            <li>Item 1</li>-->
+<!--                            <li>Item 2</li>-->
+<!--                            <li>How about one more?</li>-->
+<!--                            <li>You can add</li>-->
+<!--                            <li>unlimited lines</li>-->
+<!--                        </ul>&lt;!&ndash; end pricing-list &ndash;&gt;-->
+<!--                        <div class="pricing-cta">-->
+<!--                            <a class="btn btn-large btn-pricing">Buy Now</a>-->
+<!--                        </div>&lt;!&ndash; end pricing-cta &ndash;&gt;-->
+<!--                    </div>&lt;!&ndash; end pricing-box &ndash;&gt;-->
+<!--                </div>&lt;!&ndash; end col-md-4 &ndash;&gt;-->
+<!--        -->
+<!--            </div>&lt;!&ndash; end row &ndash;&gt;-->
+<!--        </div>&lt;!&ndash; end container &ndash;&gt;-->
+
+<!--    </section>-->
+
+    <!--/////////////////////////////////////// end PRICING SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// TESTIMONIALS SECTION ////////////////////////////////////////-->
+
+<!--    <section id="testimonials">-->
+
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+
+<!--                &lt;!&ndash;////////// Another Carousel Slider //////////&ndash;&gt;-->
+<!--                <div id="testimonials-slider" class="carousel slide">-->
+<!--                    <ol class="carousel-indicators">-->
+<!--                        <li data-target="#testimonials-slider" data-slide-to="0" class="active"></li>-->
+<!--                        <li data-target="#testimonials-slider" data-slide-to="1"></li>-->
+<!--                    </ol>-->
+<!--                    -->
+<!--                    &lt;!&ndash; Carousel items &ndash;&gt;-->
+<!--                    <div class="carousel-inner">-->
+<!--                    -->
+<!--                        &lt;!&ndash; Testimonial 1 &ndash;&gt;-->
+<!--                        <div class="active item">-->
+
+<!--                            <div class="col-md-2 col-md-offset-1">-->
+
+<!--                                <div class="quote-icon">-->
+<!--                                    <img src="images/icons/dude.svg" alt="" title="" />-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-8">-->
+<!--                                <p class="lead">Well... honestly it doesn't get much better than this! These guys know what they're doing!</p>-->
+<!--                                <cite>John Doe, <a href="#">Freelance Journalist</a></cite>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash; Testimonial 2 &ndash;&gt;-->
+<!--                        <div class="item">-->
+
+<!--                            <div class="col-md-2 col-md-offset-1">-->
+
+<!--                                <div class="quote-icon">-->
+<!--                                    <img src="images/icons/girl.svg" alt="" title="" />-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-8">-->
+<!--                                <p class="lead">If i had to do it again, i'd definitely go with the same team - that was an amazing experience.</p>-->
+<!--                                <cite>Sarah Jackson, <a href="#">Startup Owner</a></cite>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                    -->
+<!--                    &lt;!&ndash; Carousel navigation arrows &ndash;&gt;-->
+<!--                    <a class="carousel-control left" href="#testimonials-slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>-->
+<!--                    <a class="carousel-control right" href="#testimonials-slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>-->
+<!--                </div>-->
+<!--                &lt;!&ndash;////////// end of Carousel Slider //////////&ndash;&gt;-->
+
+<!--            </div>&lt;!&ndash; /row &ndash;&gt;-->
+<!--        </div>&lt;!&ndash; /container &ndash;&gt;-->
+
+<!--    </section>-->
+
+    <!--/////////////////////////////////////// end TESTIMONIALS SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// FAQ SECTION ////////////////////////////////////////-->
+
+<!--    <section id="faq">-->
+
+<!--        <div class="container">-->
+
+<!--            <header>-->
+<!--                <h1>F.A.Q.</h1>-->
+<!--                <p class="lead">You have a question? Someone else might have had the exact same one. Let's find out!</p>-->
+<!--            </header>-->
+
+<!--            <div class="row">-->
+
+<!--                <div class="col-md-6">-->
+
+<!--                    &lt;!&ndash;////////// Accordion Toggle //////////&ndash;&gt;-->
+<!--                    <div class="panel-group" id="accordion">-->
+<!--                     -->
+<!--                        &lt;!&ndash; PANEL 1 &ndash;&gt;-->
+<!--                        <div class="panel panel-default">-->
+<!--                            <div class="panel-heading">-->
+<!--                                <h4 class="panel-title">-->
+<!--                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">-->
+<!--                                    Is this template compatible with Bootstrap 3?-->
+<!--                                    </a>-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            -->
+<!--                            <div id="collapseOne" class="panel-collapse collapse">-->
+<!--                                <div class="panel-body">-->
+<!--                                    <p>Absolutely! As shown with a few examples within this demo, you can use all the bootstrap goodies such as carousels, modal windows, tooltips, tabs, accordions, form elements...</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    -->
+<!--                        &lt;!&ndash; PANEL 2 &ndash;&gt;-->
+<!--                        <div class="panel panel-default">-->
+<!--                            <div class="panel-heading">-->
+<!--                                <h4 class="panel-title">-->
+<!--                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">-->
+<!--                                    Are there more icons available?-->
+<!--                                    </a>-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div id="collapseTwo" class="panel-collapse collapse">-->
+<!--                                <div class="panel-body">-->
+<!--                                    <p>Hell yeah! This template is built on the awesome <a href="http://designmodo.com/flat/" target="_blank">Flat UI Pro kit by Designmodo</a>.<br>All the icons & goodies you can see on the kit presentation can be used in Booom!</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash; PANEL 3 &ndash;&gt;-->
+<!--                        <div class="panel panel-default">-->
+<!--                            <div class="panel-heading">-->
+<!--                                <h4 class="panel-title">-->
+<!--                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">-->
+<!--                                    Can you resize the illustrations?-->
+<!--                                    </a>-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            -->
+<!--                            <div id="collapseThree" class="panel-collapse collapse">-->
+<!--                                <div class="panel-body">-->
+<!--                                    <p>Those gorgeous illustrations are available in SVG format (vector), which means they're completely scaleable without any quality loss.</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash; PANEL 4 &ndash;&gt;-->
+<!--                        <div class="panel panel-default">-->
+<!--                            <div class="panel-heading">-->
+<!--                                <h4 class="panel-title">-->
+<!--                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">-->
+<!--                                    Does the template hack into Bootsrap core files?-->
+<!--                                    </a>-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            -->
+<!--                            <div id="collapseFour" class="panel-collapse collapse">-->
+<!--                                <div class="panel-body">-->
+<!--                                    <p>Nooooo. Yeww, no way! The Bootsrap files are totally untouched - all the customizations are done on extra css (or LESS) files, so you can upgrade bootstrap versions wihout any modification losses.</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div> -->
+<!--                    &lt;!&ndash;////////// end of Accordion Toggle //////////&ndash;&gt;              -->
+
+<!--                    <div class="alert">-->
+<!--                        -->
+<!--                        <p class="lead">Our Contact Details</p>-->
+<!--                        <div class="row">-->
+<!--                          -->
+<!--                          <div class="col-md-4 col-xs-6 text-left">-->
+<!--                            <strong>Address</strong>-->
+<!--                          </div>-->
+<!--                          -->
+<!--                          <div class="col-md-8 col-xs-6">-->
+<!--                            <address>-->
+<!--                              144 Pitt Street, Byron Bay, Australia<br>-->
+<!--                            </address>-->
+<!--                          </div>-->
+
+<!--                        </div>&lt;!&ndash; /row &ndash;&gt;-->
+
+<!--                        <div class="row">-->
+<!--                          -->
+<!--                          <div class="col-md-4 col-xs-6 text-left">-->
+<!--                            <strong>Phone Number</strong>-->
+<!--                          </div>-->
+<!--                          -->
+<!--                          <div class="col-md-8 col-xs-6">-->
+<!--                            <address>-->
+<!--                              +61 (0) 243 888 888<br>-->
+<!--                            </address>-->
+<!--                          </div>-->
+
+<!--                        </div>&lt;!&ndash; /row &ndash;&gt;-->
+
+<!--                        <div class="row">-->
+<!--                          -->
+<!--                          <div class="col-md-4 col-xs-6 text-left">-->
+<!--                            <strong>Mobile Number</strong>-->
+<!--                          </div>-->
+<!--                          -->
+<!--                          <div class="col-md-8 col-xs-6">-->
+<!--                            <address>-->
+<!--                              +61 (0) 424 999 999<br>-->
+<!--                            </address>-->
+<!--                          </div>-->
+
+<!--                        </div>&lt;!&ndash; /row &ndash;&gt;-->
+
+<!--                    </div>&lt;!&ndash; /alert &ndash;&gt;-->
+
+<!--                </div>&lt;!&ndash; /col-md-6 &ndash;&gt;-->
+
+<!--                <div class="col-md-6">-->
+
+<!--                    <div class="row contact-intro">-->
+<!--                        <div class="col-md-3 text-right"><img src="images/icons/support.svg" alt="" title="" /></div>-->
+<!--                        <div class="col-md-9"><p class="lead">Didn't find what you were looking for? Shoot us a line!</p></div>                        -->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash;////////// CONTACT FORM //////////&ndash;&gt;-->
+<!--                    <form id="contact-form">-->
+<!--                        <input type="text" id="name" name="name" class="form-control input-hg" placeholder="Your name..." />-->
+<!--                        <input type="text" id="email" name="email" class="form-control input-hg" placeholder="Your e-mail address..." />-->
+<!--                        <textarea class="form-control input-hg" rows="4" id="message" name="message" placeholder="Your message..."></textarea>-->
+<!--                        <button type="submit" class="btn btn-inverse btn-hg btn-block" name="submit">Send</button>-->
+<!--                    </form>-->
+
+<!--                     <div id="contact-error"></div>-->
+<!--                    &lt;!&ndash;////////// end CONTACT FORM ///////////&ndash;&gt;-->
+
+<!--                </div>&lt;!&ndash; /col-md-6&ndash;&gt;-->
+<!--                -->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </section>-->
+
+    <!--/////////////////////////////////////// end FAQ SECTION ////////////////////////////////////////-->
+
+
+
+
+
+
+
+    <!--//////////////////////////////////////// FOOTER SECTION ////////////////////////////////////////-->
+<!--    <section id="footer">-->
+<!--        <div class="bottom-menu-inverse">-->
+
+<!--            <div class="container">-->
+
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <p>Copyright &copy; 2014 Booom! Collect from <a href="http://www.freemuban.com/" title="网页模板" target="_blank">网页模板</a>.</p>-->
+<!--                    </div>-->
+
+<!--                    <div class="col-md-6 social">-->
+<!--                        <ul class="bottom-icons">-->
+<!--                            <li>-->
+<!--                              <a href="#" class="fui-facebook"></a>-->
+<!--                            </li>-->
+<!--                             <li>-->
+<!--                              <a href="#" class="fui-twitter"></a>-->
+<!--                            </li>-->
+<!--                             <li>-->
+<!--                              <a href="#" class="fui-pinterest"></a>-->
+<!--                            </li>-->
+<!--                             <li>-->
+<!--                              <a href="#" class="fui-googleplus"></a>-->
+<!--                            </li>-->
+<!--                             <li>-->
+<!--                              <a href="#" class="fui-dribbble"></a>-->
+<!--                            </li>-->
+<!--                             <li>-->
+<!--                              <a href="#" class="fui-vimeo"></a>-->
+<!--                            </li>-->
+<!--                          </ul>                      -->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            -->
+<!--            </div>&lt;!&ndash; /row &ndash;&gt;-->
+<!--        </div>&lt;!&ndash; /container &ndash;&gt;-->
+
+<!--    </section>-->
+
+    <!--//////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
+
+
+
+    <!--//////////////////////////////////////// JAVASCRIPT LOAD ////////////////////////////////////////-->
+
+    <!-- Feel free to remove the scripts you are not going to use -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.fitvids.min.js"></script>
+    <script src="assets/twitter/jquery.tweet.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!--//////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
+
+  </body>
+</html>
