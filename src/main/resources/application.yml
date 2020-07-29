@@ -19,6 +19,5 @@ spring:
     active: dev
 
 
-  mvc:
-    static-path-pattern: /static/**
+
 
