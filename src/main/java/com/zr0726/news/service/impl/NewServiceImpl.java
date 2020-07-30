@@ -3,11 +3,14 @@ package com.zr0726.news.service.impl;
 import com.zr0726.news.dao.NewRepository;
 import com.zr0726.news.po.News;
 import com.zr0726.news.service.NewService;
+import com.zr0726.news.util.MarkdownUtils;
 import com.zr0726.news.vo.NewQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
@@ -70,6 +73,42 @@ public class NewServiceImpl implements NewService {
         BeanUtils.copyProperties(news, news1);
         news1.setUpdateTime(new Date());
         return newRepository.save(news1);
+    }
+
+    @Override
+    public void deleteNew(Long id) {
+        newRepository.deleteById(id);
+    }
+
+    @Override
+    public Page<News> listNew(Pageable pageable) {
+        return newRepository.findAll(pageable);
+    }
+
+    @Override
+    public List<News> ListRecommendNewTop(Integer size) {
+        Sort sort =Sort.by(Sort.Direction.DESC,"updateTime");
+        Pageable pageable= PageRequest.of(0,size,sort);
+        return newRepository.findTop(pageable);
+    }
+
+    @Override
+    public Page<News> listNew(String query,Pageable pageable){
+        return newRepository.findByQuery(query,pageable);
+    }
+
+    @Override
+    public News getAndConvert(Long id) {
+        News news=newRepository.findById(id).orElse(null);
+        if(news==null){
+            System.out.println("该新闻不存在");
+        }
+        News news1= new News();
+        BeanUtils.copyProperties(news,news1);
+        String content=news1.getContent();
+        news1.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+
+        return news1;
     }
 
 
