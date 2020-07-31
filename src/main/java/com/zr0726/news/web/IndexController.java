@@ -47,4 +47,15 @@ public class IndexController {
         return "new";
     }
 
+//    @GetMapping("/blog-small-images")
+//    public String toBlog(@PageableDefault(size=3,sort={"updateTime"},direction = Sort.Direction.DESC)
+//                                Pageable pageable, Model model){
+//        model.addAttribute("page",newService.listNew(pageable));
+//        model.addAttribute("types",typeService.listTypeTop(5));
+//        model.addAttribute("tags",tagService.listTagTop(3));
+//        model.addAttribute("recommendNews",newService.ListRecommendNewTop(3));
+//        return "blog-small-images";
+//    }
+
+
 }

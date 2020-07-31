@@ -40,6 +40,9 @@ public class News{
     @ManyToMany(cascade = CascadeType.PERSIST)//级联 多对多会生成中间表news-tas
     private List<Tag> tags=new ArrayList<>();
 
+    @OneToMany(mappedBy = "news")
+    private List<Comment> comments=new ArrayList<>();
+
     @Transient
     private String tagIds;//不生成字段
 
@@ -195,6 +198,14 @@ public class News{
 
     public void init(){
         this.tagIds=tagsToIds(this.getTags());
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
     }
 
     private String tagsToIds(List<Tag> tags) {

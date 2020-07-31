@@ -80,4 +80,11 @@ public class TagController {
         return "redirect:/admin/tags";
     }
 
+    @RequestMapping("/tags/{id}/delete")
+    public String delete(@PathVariable long id,RedirectAttributes attributes){
+        tagService.deleteTag(id);
+        attributes.addFlashAttribute("message","删除成功");
+        return "redirect:/admin/tags";
+    }
+
 }

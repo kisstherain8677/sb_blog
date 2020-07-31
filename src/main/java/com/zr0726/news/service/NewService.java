@@ -31,4 +31,7 @@ public interface NewService {
     //
     News getAndConvert(Long id);
 
+    //标签页面
+    Page<News>listNew(Long tagId,Pageable pageable);
+
 }

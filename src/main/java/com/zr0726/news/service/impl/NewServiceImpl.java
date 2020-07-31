@@ -14,10 +14,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -109,6 +106,17 @@ public class NewServiceImpl implements NewService {
         news1.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
 
         return news1;
+    }
+
+    @Override
+    public Page<News> listNew(Long tagId, Pageable pageable) {
+        return newRepository.findAll(new Specification<News>() {
+            @Override
+            public Predicate toPredicate(Root<News> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+                Join join=root.join("tags");
+                return cb.equal(join.get("id"),tagId);
+            }
+        },pageable);
     }
 
 
